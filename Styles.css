@@ -1,0 +1,115 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color and font for the body */
+body {
+  background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* Add a top navigation bar */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+/* Add a responsive layout */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+/* Style the main content area */
+main {
+  margin: 4rem auto;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+/* Add a card style for the portfolio items */
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .card-content {
+  padding: 1rem;
+}
+
+.card .card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card .card-content p {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.card .card-content .card-cta {
+  display: flex;
+  align-items: center;
+}
+
+.card .card-content .card-cta a {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: background-color 0.2s;
+}
+
+.card .card-content .card-cta a:hover {
+  background-color: #666;
+}
+
+/* Add a footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
